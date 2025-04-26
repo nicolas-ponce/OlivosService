@@ -7,8 +7,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     width: 70%;
-    height: calc(100vh - 10rem);
-    margin: 0 auto;
+    margin: 2rem auto 0;
 `
 
 export const HeroImgDiv = styled(motion.div)`

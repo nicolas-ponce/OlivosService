@@ -5,6 +5,7 @@
   --openSansFont: "Open Sans", sans-serif;
   --black: #121212;
   --white: #F8F9FF;
+  --orange: #EE6C4D;
 
 
   font-synthesis: none;
@@ -21,6 +22,8 @@ html {
 body {
   box-sizing: border-box;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3 ,h4, h5, h6, p, a {
@@ -68,6 +71,7 @@ p {
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--black);
+  letter-spacing: .02rem;
 }
 
 
@@ -79,14 +83,20 @@ a {
   color: var(--black);
 }
 
-a::after {
-  content: "";
+ul {
+  padding: 0 2rem;
+  margin: 0;
+  list-style-type: disc;
+  list-style: circle;
   display: flex;
-  width: 0;
-  height: 1px;
-  background: var(--black);
-  transition: width .3s;
+  gap: .4rem;
+  flex-direction: column;
 }
-a:hover::after {
-  width: 100%;
+
+li {
+  font-family: var(--openSansFont);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--black);
+  letter-spacing: .02rem;
 }

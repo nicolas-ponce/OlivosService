@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const DIV = styled.div`
     position: sticky;
     top: 0;
+    z-index: 100;
     display: flex;
     height: 8rem;
     width: auto;
@@ -12,7 +13,7 @@ export const DIV = styled.div`
     justify-content: space-between;
     align-items: center;
     background: #F8F9FF;
-    background: linear-gradient(180deg, rgba(248, 249, 255, 100) 95%, rgba(248, 249, 255, 0) 100%);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
 `
 
 export const ImgDiv = styled.div`
@@ -34,4 +35,17 @@ export const NAV = styled.nav`
     justify-content: center;
     align-items: center;
     gap: 2rem;
+
+    a::after {
+        content: "";
+        display: flex;
+            width: 0;
+        height: 1px;
+        background: var(--black);
+        transition: width .3s;
+    }
+
+    a:hover::after {
+    width: 100%;
+    }
 `
