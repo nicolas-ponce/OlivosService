@@ -30,24 +30,7 @@ export const TextDiv = styled(motion.div)`
     align-items: center;
     width: 40%;
 
-    & a {
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: var(--orange);
-        text-decoration: none;
-    }
 
-    & a::after {
-        content: "";
-        display: flex;
-        width: 0;
-        height: 1px;
-        background: var(--orange);
-        transition: width .3s;
-    }
-    & a:hover::after {
-        width: 100%;
-    }
 `
 
 export const LinkDiv = styled(motion.div)`
@@ -57,7 +40,6 @@ export const LinkDiv = styled(motion.div)`
     align-items: center;
     width: 100%;
     margin: 2.4rem 0;
-
 `
 
 

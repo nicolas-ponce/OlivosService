@@ -5,6 +5,7 @@ import aireAcondicionado_img from "../../assets/imgs/instalacion-aire-acondicion
 import trabajoAltura_img from "../../assets/imgs/instalacion-en-altura.webp"
 import estufa_img from "../../assets/imgs/instalacion-estufaAGas.webp"
 import lavarropa_img from "../../assets/imgs/reparacion-lavarropa.webp"
+import { OrangeLink_Btn } from "../../components/orangeLink_btn/OrangeLink_Btn"
 
 
 
@@ -17,8 +18,14 @@ export const Servicios_Section = () => {
                 <TextDiv>
                     <p>Para cualquier enredo con tu marca preferida, estamos listos para darte una mano. Conocemos bien el terreno y sabemos cómo solucionarlo.</p>
                     <LinkDiv>
-                        <a href="#">Preguntas Frecuentes</a>
-                        <a href="#">Contactarse</a>
+                        <OrangeLink_Btn
+                            href="#"
+                            name="Preguntas Frecuentes"
+                        />
+                        <OrangeLink_Btn
+                            href="#"
+                            name="Contactarse"
+                        />
                     </LinkDiv>
                 </TextDiv>
             </TitleContainer>
