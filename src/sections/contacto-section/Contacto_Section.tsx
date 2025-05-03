@@ -81,11 +81,11 @@ export const Contacto_Section = () => {
                 />
                 <motion.label
                   htmlFor="nombre"
-                  initial={{ x: 0, fontSize: "1.4rem" }}
+                  initial={{ x: 0, fontSize: "1.4rem", color: "rgb(88, 88, 88)" }}
                   animate={
                     formData.Nombre || focusedField === "Nombre"
-                      ? {  x: -60, fontSize: "1.2rem"  }
-                      : { x: 0, fontSize: "1.4rem" }
+                      ? {  x: -60, fontSize: "1.2rem", color: "#121212"  }
+                      : { x: 0, fontSize: "1.4rem", color: "rgb(88, 88, 88)" }
                   }
                   transition={{ duration: 0.2 }}
                 >
@@ -106,11 +106,11 @@ export const Contacto_Section = () => {
                 />
                 <motion.label
                   htmlFor="email"
-                  initial={{ x: 0, fontSize: "1.4rem" }}
+                  initial={{ x: 0, fontSize: "1.4rem", color: "rgb(88, 88, 88)" }}
                   animate={
                     formData.Email || focusedField === "Email"
-                      ? {  x: -60, fontSize: "1.2rem"  }
-                      : { x: 0, fontSize: "1.4rem" }
+                      ? {  x: -60, fontSize: "1.2rem", color: "#121212"  }
+                      : { x: 0, fontSize: "1.4rem", color: "rgb(88, 88, 88)" }
                   }
                   transition={{ duration: 0.2 }}
                 >
@@ -118,26 +118,60 @@ export const Contacto_Section = () => {
                 </motion.label>
               </div>
 
-              <div className={formData.Telefono ? "filled" : ""}>
-                <label htmlFor="telefono">Teléfono</label>
+              <div className={`input-group`}>
                 <input
                   name="Telefono"
                   id="telefono"
                   type="tel"
                   value={formData.Telefono}
                   onChange={handleChange}
+                  required
+                  onFocus={() => setFocusedField("Telefono")}
+                  onBlur={() => setFocusedField("")}
                 />
+                <motion.label
+                  htmlFor="telefono"
+                  initial={{ x: 0, fontSize: "1.4rem", color: "rgb(88, 88, 88)" }}
+                  animate={
+                    formData.Telefono || focusedField === "Telefono"
+                      ? {  x: -60, fontSize: "1.2rem", color: "#121212"  }
+                      : { x: 0, fontSize: "1.4rem", color: "rgb(88, 88, 88)" }
+                  }
+                  transition={{ duration: 0.2 }}
+                >
+                  Telefono
+                </motion.label>
               </div>
-              <div className={formData.Consulta ? "filled" : ""}>
-                <label htmlFor="consulta">Consulta</label>
-                <textarea
+
+              <div className={`input-group`}>
+                <motion.textarea
                   name="Consulta"
                   id="consulta"
                   value={formData.Consulta}
                   onChange={handleChange}
+                  onInput={(e) => {
+                    const el = e.currentTarget;
+                    el.style.height = "auto";
+                    el.style.height = el.scrollHeight + "px";
+                  }}
                   required
+                  onFocus={() => setFocusedField("Consulta")}
+                  onBlur={() => setFocusedField("")}
                 />
+                <motion.label
+                  htmlFor="consulta"
+                  initial={{ x: 0, fontSize: "1.4rem", color: "rgb(88, 88, 88)" }}
+                  animate={
+                    formData.Consulta || focusedField === "Consulta"
+                      ? {  x: -60, fontSize: "1.2rem", color: "#121212"  }
+                      : { x: 0, fontSize: "1.4rem", color: "rgb(88, 88, 88)" }
+                  }
+                  transition={{ duration: 0.2 }}
+                >
+                  Consulta
+                </motion.label>
               </div>
+
               <button type="submit">Enviar</button>
             </Form>
           )}

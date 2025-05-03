@@ -1,5 +1,6 @@
 import './App.css'
 import { SectionIndicatorDiv } from './components/sectionIndicatorDiv/SectionIndicatorDiv'
+import { Footer_Layout } from './layouts/footer_layout/Footer_Layout'
 import { Navbar_Layout } from './layouts/navbar_layout/Navbar_Layout'
 import { Alcance_Section } from './sections/alcance-section/Alcance_Section'
 import { Contacto_Section } from './sections/contacto-section/Contacto_Section'
@@ -25,6 +26,8 @@ function App() {
 
     <SectionIndicatorDiv subtitle="Contacto" />
     <Contacto_Section />
+
+    <Footer_Layout />
     
   </>
 }

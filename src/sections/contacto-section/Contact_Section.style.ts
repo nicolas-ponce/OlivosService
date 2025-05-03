@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 80%;
     margin: 0 auto;
 `
@@ -19,7 +19,7 @@ export const ContactInfoContainer = styled.div`
 export const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     margin: 0;
 
     p {
@@ -74,24 +74,27 @@ export const Form = styled.form`
         margin: auto;
         font-size: 1.4rem;
         font-weight: 400;
-        color: var(--black);
+        color:rgb(88, 88, 88);
         font-family: var(--openSansFont);
     }
 
     input, textarea {
-        padding: 1.2rem 1.8rem;
+        padding: .8rem 0 .4rem;
         border: none;
         border-bottom: 1px solid var(--black);
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 400;
         color: var(--black);
         background-color: transparent;
         width: 100%;
+        letter-spacing: .04rem;
+        font-family: var(--openSansFont);
     }
 
     textarea {
-        height: 4rem;
+        height: auto;
         resize: none;
+        overflow: hidden;
     }
 
     & button {
@@ -106,7 +109,8 @@ export const Form = styled.form`
         width: fit-content;
     }
 
-    input:focus, textarea:focus ~ label{
+    input:focus,
+    textarea:focus {
         outline: none;
     }
 `

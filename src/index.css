@@ -1,5 +1,5 @@
 :root {
-  background-color: #F8F9FF;
+  background-color: #f8f9ff;
   color: #121212;
   --montserratFont: "Montserrat", sans-serif;
   --openSansFont: "Open Sans", sans-serif;
@@ -65,6 +65,12 @@ h5 {
   color: var(--black);
 }
 
+h6 {
+  font-family: var(--montserratFont);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--black);
+}
 
 p {
   font-family: var(--openSansFont);

@@ -47,7 +47,7 @@ export const Faq_Section = () => {
                 {questions.map((q) => (
                     <QuestionBox key={q.id}>
                         <QuestionTextDiv onClick={() => {setIsActiveQuestion(isActiveQuestion === q.id ? null : q.id)}}>
-                            <h4>{q.question}</h4>
+                            <h5>{q.question}</h5>
                             {isActiveQuestion === q.id ?
                                 (
                                     <p>-</p>
