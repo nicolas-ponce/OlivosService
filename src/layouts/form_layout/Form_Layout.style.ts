@@ -9,12 +9,12 @@ export const FormContainer = styled.div`
     width: 45%;
     margin: 0;
 
-    p {
-        width: 80%;
-        margin: 2.4rem 0;
-    }
 `
 
+export const FormInfo = styled(motion.p)`
+    width: 80%;
+    margin: 2.4rem 0;
+`
 
 export const Form = styled(motion.form)`
     display: flex;
@@ -78,4 +78,10 @@ export const Form = styled(motion.form)`
     textarea:focus {
         outline: none;
     }
+`
+
+export const SuccessMsg = styled(motion.p)`
+    margin: 0;
+    font-size: 1.3rem;
+    color:rgb(15, 121, 14);
 `

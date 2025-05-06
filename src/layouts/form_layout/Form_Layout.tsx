@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form, FormContainer } from "./Form_Layout.style";
+import { Form, FormContainer, FormInfo, SuccessMsg } from "./Form_Layout.style";
 import { motion } from "framer-motion";
 
 
@@ -34,7 +34,7 @@ export const Form_Layout = () => {
         setFormData((prev) => ({ ...prev, [name]: value }));
       };
     
-      const handleSubmit = async (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      const handleSubmit = async (e: React.FormEvent<HTMLFormElement | HTMLTextAreaElement>) => {
         e.preventDefault();
     
         const form = new FormData();
@@ -73,26 +73,21 @@ export const Form_Layout = () => {
 
     return (
         <FormContainer>
-          <motion.p
+          <FormInfo
             initial={{opacity: 0, x: -100}}
             whileInView={{opacity: 1, x: 0}}
             transition={{delay: .2}}
             viewport={{ once: true }}
           >
             ¿Necesitás un presupuesto, tenés una consulta o querés coordinar una visita? Escribinos y te respondemos lo antes posible. En Olivos Service valoramos tu tiempo y estamos para ayudarte con lo que necesites.
-          </motion.p>
+          </FormInfo>
 
-          {submitted ? (
-            <p style={{ color: "green", fontWeight: "bold" }}>
-              ¡Gracias por tu mensaje! Te contactaremos pronto.
-            </p>
-          ) : (
             <Form
                 variants={FormVariants}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.4 }}
-                onSubmit={() => {handleSubmit}}
+                onSubmit={handleSubmit}
             >
               <motion.div
                 variants={FormItemVariants}
@@ -209,12 +204,26 @@ export const Form_Layout = () => {
                   Consulta
                 </motion.label>
               </motion.div>
+                
+
+              {submitted && 
+              <SuccessMsg
+                initial={{ opacity: 0, scale: 0}}
+                animate={{ opacity: 1, scale: 1 }}
+              >
+                ¡Gracias por tu mensaje! Te contactaremos pronto.
+              </SuccessMsg>
+              }
+
+
+
 
               <motion.button
                 variants={FormItemVariants}
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.96 }}
               type="submit">Enviar</motion.button>
             </Form>
-          )}
         </FormContainer>
     )
 }
