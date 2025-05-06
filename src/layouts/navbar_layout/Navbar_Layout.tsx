@@ -12,12 +12,12 @@ export const Navbar_Layout = () => {
                     <Logo src={logo} alt="Logo" />
                 </ImgDiv>
                 <NAV>
-                    <a href="#">HOME</a>
-                    <a href="#SERVICIOS">SERVICIOS</a>
-                    <a href="#ALCANCE">ALCANCE</a>
-                    <a href="#SOBRE_NOSOTROS">SOBRE NOSOTROS</a>
-                    <a href="#PREGUNTAS_FRECUENTES">PREGUNTAS FRECUENTES</a>
-                    <a href="#CONTACTO">CONTACTO</a>
+                    <a aria-label="Ir a pantalla inicial" href="#">HOME</a>
+                    <a aria-label="Ir a sección de servicios prestados" href="#SERVICIOS">SERVICIOS</a>
+                    <a aria-label="Ir a sección de alcance de servicios" href="#ALCANCE">ALCANCE</a>
+                    <a aria-label="Ir a sección de sobre nosotros" href="#SOBRE_NOSOTROS">SOBRE NOSOTROS</a>
+                    <a aria-label="Ir a sección de preguntas frecuentes" href="#PREGUNTAS_FRECUENTES">PREGUNTAS FRECUENTES</a>
+                    <a aria-label="Ir a sección de contacto" href="#CONTACTO">CONTACTO</a>
                 </NAV>
                 <AgendarVisita_Btn />
             </DIV>

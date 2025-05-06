@@ -44,6 +44,8 @@ export const QuestionTextDiv = styled(motion.div)`
     width: 100%;
     padding: 1.6rem 0;
     gap: 2.4rem;
+    background-color: transparent;
+    border: none;
 
     cursor: pointer;
 

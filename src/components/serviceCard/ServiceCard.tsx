@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {
   BackgroundDiv,
-  ContactBtn,
+  ContactBtnLink,
   Container,
   Description,
   GradientOverlay,
@@ -22,7 +22,7 @@ interface ServiceCardProps {
 export const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClickExit = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleClickExit = (e: React.MouseEvent<HTMLElement>) => {
     e.stopPropagation();
     setIsOpen(false);
   };
@@ -99,11 +99,13 @@ export const ServiceCard = ({ image, title, description }: ServiceCardProps) => 
             )}
         </AnimatePresence>
         </TextContainer>
-        <ContactBtn
+        <ContactBtnLink
+          onClick={handleClickExit}
+          href="#CONTACTO"
           className={isOpen ? "open" : ""}
         >
           <p>Contactarse</p>
-        </ContactBtn>
+        </ContactBtnLink>
 
         <VolverDiv
           className={isOpen ? "open" : ""}

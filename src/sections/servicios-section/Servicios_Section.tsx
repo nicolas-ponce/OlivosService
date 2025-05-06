@@ -21,10 +21,12 @@ export const Servicios_Section = () => {
                         <OrangeLink_Btn
                             href="#PREGUNTAS_FRECUENTES"
                             name="Preguntas Frecuentes"
+                            aria-label="Ir a sección de preguntas frecuentes" 
                         />
                         <OrangeLink_Btn
                             href="#CONTACTO"
                             name="Contactarse"
+                            aria-label="Ir a sección de contacto" 
                         />
                     </LinkDiv>
                 </TextDiv>

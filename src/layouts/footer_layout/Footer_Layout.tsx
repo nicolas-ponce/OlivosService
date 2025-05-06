@@ -17,18 +17,27 @@ export const Footer_Layout = () => {
 
                 <IconsDiv>
                     <motion.a
+                        aria-label="Chatear en Whatsapp"
                         whileHover={{y: -4}}
-                    href="#">
+                        href="https://wa.me/5491127719502?text=Hola!%20Tengo%20una%20consulta,%20..."
+                        target="_BLANK"
+                    >
                         <img src={whatsappIcon} alt="Icono de Whatsapp" />
                     </motion.a>
                     <motion.a
+                        aria-label="Visitar Facebook de Olivos Service"
                         whileHover={{y: -4}}                        
-                    href="#">
+                        href="#"
+                        target="_BLANK"
+                    >
                         <img src={facebookIcon} alt="Icono de Facebook" />
                     </motion.a>
                     <motion.a
+                        aria-label="Visitar Instagram de Olivos Service"
                         whileHover={{y: -4}}                    
-                    href="#">
+                        href="#"
+                        target="_BLANK"
+                    >
                         <img src={instagramIcon} alt="Icono de Instagram" />
                     </motion.a>
                 </IconsDiv>

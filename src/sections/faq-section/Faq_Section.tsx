@@ -39,14 +39,19 @@ export const Faq_Section = () => {
                 <h2>PREGUNTAS FRECUENTES</h2>
                 <p>Sabemos que a la hora de contratar un servicio surgen dudas. Por eso, reunimos las preguntas más comunes para ayudarte a resolverlas rápido y sin vueltas. Si no encontrás lo que buscás, no dudes en escribirnos. Estamos para ayudarte.</p>
                 <OrangeLink_Btn
+                    aria-label="Ir a sección de contacto"
                     href="#CONTACTO"
                     name="Contactarse"
                 />
             </TextDiv>
             <FaqDiv>
                 {questions.map((q) => (
-                    <QuestionBox key={q.id}>
-                        <QuestionTextDiv onClick={() => {setIsActiveQuestion(isActiveQuestion === q.id ? null : q.id)}}>
+                    <QuestionBox
+                        key={q.id}>
+                        <QuestionTextDiv
+                            as="button"
+                            onClick={() => {setIsActiveQuestion(isActiveQuestion === q.id ? null : q.id)}}
+                            >
                             <h5>{q.question}</h5>
                             {isActiveQuestion === q.id ?
                                 (

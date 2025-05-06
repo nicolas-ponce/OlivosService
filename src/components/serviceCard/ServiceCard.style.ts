@@ -151,7 +151,7 @@ export const Description = styled(motion.div)`
     gap: 1.6rem;
 `
 
-export const ContactBtn = styled(motion.div)`
+export const ContactBtnLink = styled(motion.a)`
     display: none;
 
     &.open {
