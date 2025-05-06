@@ -13,11 +13,11 @@ export const Navbar_Layout = () => {
                 </ImgDiv>
                 <NAV>
                     <a href="#">HOME</a>
-                    <a href="#">SERVICIOS</a>
-                    <a href="#">ALCANCE</a>
-                    <a href="#">SOBRE NOSOTROS</a>
-                    <a href="#">PREGUNTAS FRECUENTES</a>
-                    <a href="#">CONTACTO</a>
+                    <a href="#SERVICIOS">SERVICIOS</a>
+                    <a href="#ALCANCE">ALCANCE</a>
+                    <a href="#SOBRE_NOSOTROS">SOBRE NOSOTROS</a>
+                    <a href="#PREGUNTAS_FRECUENTES">PREGUNTAS FRECUENTES</a>
+                    <a href="#CONTACTO">CONTACTO</a>
                 </NAV>
                 <AgendarVisita_Btn />
             </DIV>

@@ -19,11 +19,11 @@ export const Servicios_Section = () => {
                     <p>Para cualquier enredo con tu marca preferida, estamos listos para darte una mano. Conocemos bien el terreno y sabemos cómo solucionarlo.</p>
                     <LinkDiv>
                         <OrangeLink_Btn
-                            href="#"
+                            href="#PREGUNTAS_FRECUENTES"
                             name="Preguntas Frecuentes"
                         />
                         <OrangeLink_Btn
-                            href="#"
+                            href="#CONTACTO"
                             name="Contactarse"
                         />
                     </LinkDiv>

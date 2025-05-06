@@ -13,18 +13,28 @@ function App() {
     <Navbar_Layout />
     <Hero_Section />
 
-    <SectionIndicatorDiv subtitle="Servicios Que Ofrecemos" />
+    <SectionIndicatorDiv
+      ID="SERVICIOS"
+      subtitle="Servicios Que Ofrecemos" />
     <Servicios_Section />
 
-    <SectionIndicatorDiv subtitle="Alcance de Nuestros Servicios" />
+    <SectionIndicatorDiv
+      ID="ALCANCE"
+      subtitle="Alcance de Nuestros Servicios" />
     <Alcance_Section />
 
-    <SectionIndicatorDiv subtitle="Sobre Nosotros" />
+    <SectionIndicatorDiv
+      ID="SOBRE_NOSOTROS"
+      subtitle="Sobre Nosotros" />
 
-    <SectionIndicatorDiv subtitle="Preguntas Frecuentes" />
+    <SectionIndicatorDiv
+      ID="PREGUNTAS_FRECUENTES"
+      subtitle="Preguntas Frecuentes" />
     <Faq_Section />
 
-    <SectionIndicatorDiv subtitle="Contacto" />
+    <SectionIndicatorDiv
+      ID="CONTACTO"
+      subtitle="Contacto" />
     <Contacto_Section />
 
     <Footer_Layout />

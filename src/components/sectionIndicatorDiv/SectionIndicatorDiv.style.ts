@@ -7,6 +7,7 @@ export const Container = styled(motion.div)`
     display: flex;
     width: 80%;
     margin: 14rem auto 2rem;
+    scroll-margin-top: 10rem;
 
     & p {
         font-size: 1.2rem;

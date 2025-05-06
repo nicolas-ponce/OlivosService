@@ -39,7 +39,7 @@ export const Faq_Section = () => {
                 <h2>PREGUNTAS FRECUENTES</h2>
                 <p>Sabemos que a la hora de contratar un servicio surgen dudas. Por eso, reunimos las preguntas más comunes para ayudarte a resolverlas rápido y sin vueltas. Si no encontrás lo que buscás, no dudes en escribirnos. Estamos para ayudarte.</p>
                 <OrangeLink_Btn
-                    href="#"
+                    href="#CONTACTO"
                     name="Contactarse"
                 />
             </TextDiv>
