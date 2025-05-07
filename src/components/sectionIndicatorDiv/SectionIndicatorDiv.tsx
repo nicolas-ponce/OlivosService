@@ -13,10 +13,10 @@ export const SectionIndicatorDiv = (props: props) => {
                 id={props.ID}
                 initial={{ opacity: 0, x: -200 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ ease: "linear", duration: .1 }}
-                viewport={{ once: true, amount: .3 }}
+                transition={{ ease: "linear", duration: .3, delay: .1 }}
+                viewport={{ once: true }}
             >
-                <p><span>/</span>{props.subtitle}</p>
+                <p><span>/</span> {props.subtitle}</p>
             </Container>
         </>
     )

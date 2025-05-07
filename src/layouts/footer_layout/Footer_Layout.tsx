@@ -44,7 +44,7 @@ export const Footer_Layout = () => {
 
                 <Line />
 
-                <p>Dev & Design by <motion.a initial={{opacity: 0.8}} whileHover={{ opacity: 1 }} href="https://nicolasponce.vercel.app/">Nicolás Ponce</motion.a></p>
+                <p>Dev & Design by <motion.a initial={{opacity: 0.8}} whileHover={{ opacity: 1 }} href="https://nicolasponce.vercel.app/" target="_BLANK">Nicolás Ponce</motion.a></p>
             </TextDiv>
         </Container>   
     )
