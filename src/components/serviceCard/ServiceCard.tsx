@@ -32,9 +32,14 @@ export const ServiceCard = ({ image, title, description }: ServiceCardProps) => 
     setIsOpen(true);
   };
 
+  const CardVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+}
+
   return (
-    <>
-        <BackgroundDiv
+    <motion.div variants={CardVariants} viewport={{ once: true }}>
+      <BackgroundDiv
             onClick={handleClickExit}
             className={isOpen ? "open" : ""}
         />
@@ -112,6 +117,6 @@ export const ServiceCard = ({ image, title, description }: ServiceCardProps) => 
           onClick={handleClickExit}
         />
       </Container>
-    </>
+    </motion.div>
   );
 };

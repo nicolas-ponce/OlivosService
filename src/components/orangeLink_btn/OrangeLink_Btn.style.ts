@@ -1,11 +1,11 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 
 
 
 
-
-export const OrangeLinkBtnStyledLink = styled.a`
+export const OrangeLinkBtnStyledLink = styled(motion.a)`
         font-size: 1.4rem;
         font-weight: 600;
         color: var(--orange);
