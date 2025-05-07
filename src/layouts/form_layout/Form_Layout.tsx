@@ -11,7 +11,7 @@ export const Form_Layout = () => {
         hidden: {opacity: 0},
         visible: {
             opacity: 1,
-            transition: { staggerChildren: 0.3 },
+            transition: { staggerChildren: 0.1 },
         },
     }
 

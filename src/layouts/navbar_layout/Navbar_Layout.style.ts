@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-
-export const DIV = styled.div`
+export const DIV = styled(motion.div)`
     position: sticky;
     top: 0;
     z-index: 100;
@@ -16,7 +16,7 @@ export const DIV = styled.div`
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
 `
 
-export const ImgDiv = styled.div`
+export const ImgDiv = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@ export const Logo = styled.img`
     height: auto;
 `
 
-export const NAV = styled.nav`
+export const NAV = styled(motion.nav)`
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -11,9 +11,10 @@ const ulVariants = {
 }
 
 const listVariants = {
-    hidden: {opacity: 0, x: 20},
-    visible: { opacity: 1, x: 0 }
+    hidden: {opacity: 0, y: 20},
+    visible: { opacity: 1, y: 0 }
 }
+
 
 export const Alcance_Section = () => {
 
@@ -28,9 +29,19 @@ export const Alcance_Section = () => {
             </ImgDiv>
 
             <TextDiv>
-                <h2>ZONAS CUBIERTAS</h2>
-                <p>Llegamos a todo <span>CABA</span>, <span>Zona Norte</span> y <span>Zona Oeste</span></p>
+                <motion.h2
+                    initial={{ opacity: 0, x: 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ amount: 1, once: true }}
+                >ZONAS CUBIERTAS</motion.h2>
+                <motion.p
+                    initial={{ opacity: 0, x: 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ amount: 1, once: true }}
+                    transition={{ delay: .2 }}
+                >Llegamos a todo <span>CABA</span>, <span>Zona Norte</span> y <span>Zona Oeste</span></motion.p>
                 <ListContainer>
+
                     <SingleDivList>
                         <p>CABA</p>
                         <motion.ul
@@ -42,6 +53,7 @@ export const Alcance_Section = () => {
                             <motion.li variants={listVariants}>Todas las comunas y barrios de Capital Federal</motion.li>
                         </motion.ul>
                     </SingleDivList>
+
                     <SingleDivList>
                         <p>Zona Norte</p>
                         <motion.ul
@@ -62,6 +74,7 @@ export const Alcance_Section = () => {
                             <motion.li variants={listVariants}>Vicente López</motion.li>
                         </motion.ul>
                     </SingleDivList>
+
                     <SingleDivList>
                         <p>Zona Oeste</p>
                         <motion.ul

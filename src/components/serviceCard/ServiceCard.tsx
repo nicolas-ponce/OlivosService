@@ -38,7 +38,10 @@ export const ServiceCard = ({ image, title, description }: ServiceCardProps) => 
 }
 
   return (
-    <motion.div variants={CardVariants} viewport={{ once: true }}>
+    <motion.div
+      variants={CardVariants}
+      viewport={{ once: true }}
+    >
       <BackgroundDiv
             onClick={handleClickExit}
             className={isOpen ? "open" : ""}
