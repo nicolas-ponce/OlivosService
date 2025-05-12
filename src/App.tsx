@@ -7,6 +7,7 @@ import { Contacto_Section } from './sections/contacto-section/Contacto_Section'
 import { Faq_Section } from './sections/faq-section/Faq_Section'
 import { Hero_Section } from './sections/hero-section/Hero_Section'
 import { Servicios_Section } from './sections/servicios-section/Servicios_Section'
+import { SobreNosotros_Section } from './sections/sobreNosotros-section/SobreNosotros_Section'
 
 function App() {
   return <>
@@ -26,6 +27,7 @@ function App() {
     <SectionIndicatorDiv
       ID="SOBRE_NOSOTROS"
       subtitle="Sobre Nosotros" />
+    <SobreNosotros_Section />
 
     <SectionIndicatorDiv
       ID="PREGUNTAS_FRECUENTES"
