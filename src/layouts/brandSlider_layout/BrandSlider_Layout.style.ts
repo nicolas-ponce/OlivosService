@@ -8,7 +8,7 @@ export const scroll = keyframes`
 `;
 
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
     overflow: hidden;
     width: 100vw;
     margin-top: 8rem;
@@ -33,10 +33,6 @@ export const Track = styled(motion.div)`
     display: flex;
     width: fit-content;
     animation: ${scroll} 24s linear infinite;
-
-    &:hover {
-        animation-play-state: paused;
-    }
 `;
 
 
