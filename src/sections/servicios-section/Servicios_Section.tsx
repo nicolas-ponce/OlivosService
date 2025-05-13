@@ -2,6 +2,7 @@ import { Container, LinkDiv, TextDiv, TitleContainer } from "./Servicios_Section
 import { OrangeLink_Btn } from "../../components/orangeLink_btn/OrangeLink_Btn"
 import { motion } from "framer-motion"
 import { ServiceCarrousel_Layout } from "../../layouts/serviceCarrousel_Layout/ServiceCarrousel_Layout"
+import { BrandSlider_Layout } from "../../layouts/brandSlider_layout/BrandSlider_Layout"
 
 
 
@@ -54,6 +55,9 @@ export const Servicios_Section = () => {
             </TitleContainer>
 
             <ServiceCarrousel_Layout />
+
+
+            <BrandSlider_Layout />
         </Container>
 
         </>
