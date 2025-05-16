@@ -34,7 +34,7 @@ export const BrandSlider_Layout = () => {
         <Container
             initial={{ opacity: 0, x: "90%" }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.6, ease: "easeOut" }}
+            transition={{ duration: .8, ease: "easeOut" }}
             viewport={{ once: true }}
         >
             <Track>
