@@ -8,6 +8,14 @@ export const Container = styled.div`
     flex-direction: column;
     width: 70%;
     margin: 2rem auto 0;
+
+    @media (max-width: 1280px) {
+        width: 80%;
+    }
+
+    @media (max-width: 992px) {
+        width: 90%;
+    }
 `
 
 export const HeroImgDiv = styled(motion.div)`
@@ -40,6 +48,33 @@ export const HeroTextDiv = styled.div`
     -webkit-backdrop-filter: blur(8px) saturate(100%);
     background-color: rgba(124, 124, 124, 0);
     border: 1px solid rgba(255, 255, 255, 0.125);
+
+    @media (max-width: 480px) {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        padding: 2.4rem 0;
+        justify-content: center;
+        align-items: center;
+        gap: .8rem;
+        backdrop-filter: blur(4px) saturate(100%);
+        -webkit-backdrop-filter: blur(8px) saturate(100%);
+
+        & h5 {
+            font-size: 2.4rem;
+            text-align: center;
+            padding: 0 1.6rem;
+        }
+
+        & p {
+            padding: 0 1.6rem;
+            text-align: center;
+        }
+    }
 `
 
 export const DataBoxContainer = styled.div`
@@ -50,4 +85,11 @@ export const DataBoxContainer = styled.div`
     width: 100%;
     margin: 2.4rem 0;
     gap: 2.4rem;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        margin: 2.4rem auto;
+        width: 90%;
+        gap: 1.6rem;
+    }
 `

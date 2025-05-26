@@ -25,8 +25,7 @@ export const DataBox: React.FC<DataBoxProps> = ({ number, text, darkBck, delayMo
             </h3>
             <p
                 style={{
-                    color: darkBck ? "#F8F9FF" : "#121212",
-                    fontSize: "1.6rem",
+                    color: darkBck ? "#F8F9FF" : "#121212"
                 }}
             >{text}</p>
         </DIV>

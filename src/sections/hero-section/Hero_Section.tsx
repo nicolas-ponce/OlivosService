@@ -31,6 +31,7 @@ export const Hero_Section = () => {
                         <p style={{ color: "white" }}>Nuestros servicios incluyen instalaciones, reparaciones y mantenimientos de tus artefactos hogareños</p>
                     </HeroTextDiv>
                 </HeroImgDiv>
+                
                 <DataBoxContainer>
                     <DataBox
                         number="+50"
@@ -46,7 +47,7 @@ export const Hero_Section = () => {
                     />
                     <DataBox
                         number="+1200"
-                        text="SERVICIOS"
+                        text="SERVICIOS PRESTADOS"
                         darkBck={true}
                         delayMotion={1}
                     />
