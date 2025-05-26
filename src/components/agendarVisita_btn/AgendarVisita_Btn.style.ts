@@ -16,4 +16,16 @@ export const IMG = styled.img`
     align-items: center;
     width: 20rem;
     height: 4.8rem;
+
+    @media (max-width: 1280px) {
+        width: 17rem;
+    }
+
+    @media (max-width: 992px) {
+        width: 15rem;
+    }
+
+    @media (max-width: 768px) {
+        width: 17rem;
+    }
 `
