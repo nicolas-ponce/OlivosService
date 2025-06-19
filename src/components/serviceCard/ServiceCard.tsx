@@ -27,6 +27,11 @@ export const ServiceCard = ({ image, title, description }: ServiceCardProps) => 
     setIsOpen(false);
   };
 
+  const handleScrollExit = (e: React.WheelEvent<HTMLDivElement>) => {
+    e.stopPropagation();
+    setIsOpen(false);
+  }
+
   const handleClickContainer = (e: React.MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
     setIsOpen(true);
@@ -54,6 +59,7 @@ export const ServiceCard = ({ image, title, description }: ServiceCardProps) => 
           type: "linear"
         } }}
         onClick={handleClickContainer}
+        onWheel={handleScrollExit}
       >
         <ImgDiv
             as={motion.div}
