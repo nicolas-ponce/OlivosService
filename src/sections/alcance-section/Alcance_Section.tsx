@@ -32,7 +32,7 @@ export const Alcance_Section = () => {
                 <motion.h2
                     initial={{ opacity: 0, x: 100 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ amount: 1, once: true }}
+                    viewport={{ amount: 0.5, once: true }}
                 >ZONAS CUBIERTAS</motion.h2>
                 <motion.p
                     initial={{ opacity: 0, x: 100 }}

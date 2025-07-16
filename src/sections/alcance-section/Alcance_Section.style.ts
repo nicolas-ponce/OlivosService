@@ -8,6 +8,16 @@ export const Container = styled(motion.div)`
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
+
+    @media (max-width: 1280px) {
+        width: 90%;
+        gap: 4rem;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
 `
 
 export const ImgDiv = styled(motion.div)`
@@ -18,6 +28,18 @@ export const ImgDiv = styled(motion.div)`
     -moz-box-shadow: -9px 7px 24px 0px rgba(0,0,0,0.25);
     border-radius: 1.6rem;
     display: flex;
+
+    @media (max-width: 768px) {
+        order: 1;
+        align-self: center;
+        width: 80%;
+        height: auto;
+    }
+
+    @media (max-width: 480px) {
+        width: 90%;
+    }
+
 `
 
 export const Img = styled.img`
@@ -45,6 +67,13 @@ export const TextDiv = styled.div`
         }
     }
 
+
+    @media (max-width: 768px) {
+        width: 100%;
+        h2 {
+            text-align: left;
+        }
+    }
 `
 
 
@@ -52,8 +81,12 @@ export const ListContainer = styled(motion.div)`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 6.4rem;
+    gap: 5.4rem;
     margin: 2.4rem auto;
+
+    @media (max-width: 1280px) {
+        gap: 3.6rem;
+    }
 `
 
 export const SingleDivList = styled(motion.div)`
