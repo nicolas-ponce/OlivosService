@@ -11,6 +11,10 @@ export const Container = styled(motion.div)`
     width: 80%;
     margin: 0 auto;
     gap: 12rem;
+
+    @media (max-width: 1280px) {
+        width: 90%;
+    }
 `
 
 export const Box1_Container = styled.div`
@@ -18,6 +22,10 @@ export const Box1_Container = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 8rem;
+
+    @media (max-width: 992px) {
+        gap: 6rem;
+    }
 `
 
 export const Box1_Info = styled(motion.div)`
@@ -46,6 +54,21 @@ export const Box2_Container = styled(motion.div)`
     grid-template-rows: repeat(4, auto);
     row-gap: 1.6rem;
     column-gap: 3.2rem;
+
+    @media (max-width: 1280px) {
+        column-gap: 2.4rem;
+    }
+
+    @media (max-width: 712px) {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(5, auto);
+        row-gap: 2.4rem;
+        column-gap: 1.6rem;
+    }
+
+    @media (max-width: 480px) {
+        column-gap: 0;
+    }
 `
 
 
@@ -60,27 +83,63 @@ export const Box2_ImgDiv1 = styled(motion.div)`
         height: 100%;
         border-radius: 1.6rem;
     }
+
+    @media (max-width: 768px) {
+        grid-column: 1 / 3;
+        grid-row: 2 / 5;
+    }
 `
 
 export const Box2_Title = styled(motion.h3)`
     grid-column: 2 / 4;
     grid-row: 1 / 2;
+
+    @media (max-width: 768px) {
+        grid-column: 1 / 4;
+        margin-bottom: 1.6rem;
+    }
 `
 
 
 export const Box2_Text1 = styled(motion.p)`
     grid-column: 2 / 4;
     grid-row: 2 / 3;
+
+    @media (max-width: 768px) {
+        grid-column: 3 / 4;
+    }
 `
 
 export const Box2_Text2 = styled(motion.p)`
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+
+    @media (max-width: 992px) {
+        grid-column: 2 / 4;
+    }
+
+    @media (max-width: 768px) {
+        grid-column: 3 / 4;
+    }
 `
 
 export const Box2_Text3 = styled(motion.p)`
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+
+    @media (max-width: 992px) {
+        grid-column: 2 / 4;
+    }
+
+    @media (max-width: 768px) {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+
+    @media (max-width: 712px) {      // Microajuste
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+    }
 `
 
 export const Box2_ImgDiv2 = styled(motion.div)`
@@ -92,5 +151,10 @@ export const Box2_ImgDiv2 = styled(motion.div)`
         width: 100%;
         height: 100%;
         border-radius: 1.6rem;
+    }
+
+    @media (max-width: 992px) {
+        display: none;
+        
     }
 `

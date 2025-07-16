@@ -28,7 +28,7 @@ export const SobreNosotros_Section = () => {
                 <Box1_Info
                     initial={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ amount: 0.9, once: true }}
+                    viewport={{ amount: 0.8, once: true }}
                 >
                     <h2>SOBRE NOSOTROS</h2>
                     <p>
@@ -38,7 +38,7 @@ export const SobreNosotros_Section = () => {
                 <Box1_ImgDiv
                     initial={{ opacity: 0, x: 100 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ amount: 0.8, once: true }}
+                    viewport={{ amount: 0.5, once: true }}
                 >
                     <img src={tecnicoReparandoAire_img} alt="Imagen del logo de Olivos Service" />
                 </Box1_ImgDiv>
