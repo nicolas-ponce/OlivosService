@@ -24,7 +24,7 @@ export const Servicios_Section = () => {
                 <motion.h2
                     initial={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ amount: 1, once: true }}
+                    viewport={{ amount: 0.3, once: true }}
                 >EXCELENCIA CERTIFICADA</motion.h2>
 
                 <TextDiv>
@@ -32,7 +32,7 @@ export const Servicios_Section = () => {
                         initial={{ opacity: 0, x: 100 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.2 }}
-                        viewport={{ once: true, amount: 1 }}
+                        viewport={{ once: true, amount: 0.3 }}
                     >Para cualquier enredo con tu marca preferida, estamos listos para darte una mano. Conocemos bien el terreno y sabemos cómo solucionarlo.</motion.p>
                     <LinkDiv
                     variants={LinkDivVariants}

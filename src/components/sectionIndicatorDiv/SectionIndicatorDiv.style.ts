@@ -18,4 +18,8 @@ export const Container = styled(motion.div)`
         color: var(--orange);
         font-weight: 800;
     }
+
+    @media (max-width: 992px) {
+        width: 90%;
+    }
 `

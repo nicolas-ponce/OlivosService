@@ -29,6 +29,7 @@ export const ServiceCard = ({ image, title, description }: ServiceCardProps) => 
 
   const handleScrollExit = (e: React.WheelEvent<HTMLDivElement>) => {
     e.stopPropagation();
+    if(window.innerWidth < 769) return;
     setIsOpen(false);
   }
 

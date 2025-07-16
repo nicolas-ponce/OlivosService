@@ -9,7 +9,7 @@ import { AnimatePresence, stagger } from "framer-motion";
 
 export const Navbar_Layout = () => {
 
-    const [isLessThan768, setIsLessThan768] = useState(false);
+    const [isLessThan769, setIsLessThan769] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleMenuToggle = () => {
@@ -26,7 +26,7 @@ export const Navbar_Layout = () => {
     }, []);
 
     const handleResize = () => {
-        setIsLessThan768(window.innerWidth < 768);
+        setIsLessThan769(window.innerWidth < 769);
     };
 
     const navVariants = {
@@ -73,7 +73,7 @@ export const Navbar_Layout = () => {
                 </ImgDiv>
 
 
-                { !isLessThan768 && (
+                { !isLessThan769 && (
                                     <NAV
                     variants={navVariants}
                     initial="hidden"
@@ -90,7 +90,7 @@ export const Navbar_Layout = () => {
 
                 <AgendarVisita_Btn />
 
-                { isLessThan768 && (
+                { isLessThan769 && (
                     <div>
                         <HamburgerIcon onClick={handleMenuToggle}>
                             <HamburgerLine></HamburgerLine>

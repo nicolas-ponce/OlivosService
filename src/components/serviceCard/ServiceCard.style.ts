@@ -45,12 +45,20 @@ export const Container = styled(motion.div)`
     
     cursor: default;
     flex-direction: row;
+    overflow: hidden;
+  }
+
+
+  @media (max-width: 768px) {
+    &.open{
+      flex-direction: column;
+    }
   }
 `
 
 
 export const ImgDiv = styled.div`
-  width: 20rem;
+  width: 100%;
   height: 28rem;
   overflow: hidden;
   border-radius: 10px;
@@ -63,6 +71,17 @@ export const ImgDiv = styled.div`
     width: 50%;
     height: 100%;
     border-radius: 0;
+  }
+
+  @media (max-width: 968px) {
+      height: 24rem;
+  }
+
+  @media (max-width: 768px) {
+      &.open {
+        width: 100%;
+        height: 80%;
+      }
   }
 `
 
@@ -112,7 +131,16 @@ export const TextContainer = styled(motion.div)`
         height: 100%;
         background-color: rgba(255, 255, 255, 0);
         margin: 2rem 4rem;
+    }
 
+
+    @media (max-width: 768px) {
+        &.open {
+          width: calc(100% - 6rem);
+          justify-content: flex-start;
+          overflow-y: auto;
+          margin-bottom: 8rem;
+        }
     }
 `
 
@@ -138,6 +166,23 @@ export const Title = styled(motion.p)`
     color: var(--black);
     text-transform: uppercase;
     align-self: flex-start;
+  }
+
+  
+  @media (max-width: 1280px) {
+      &.open {
+        font-size: 3.2rem;
+      }
+  }
+
+  @media (max-width: 968px) {
+      font-size: 1.4rem;
+  }
+
+  @media (max-width: 768px) {
+      &.open {
+        position: relative;
+      }
   }
 `;
 
@@ -180,6 +225,20 @@ export const ContactBtnLink = styled(motion.a)`
       font-weight: 600;
       font-size: 1.7rem;
     }
+
+    
+
+    @media (max-width: 768px) {
+        &.open {
+          width: 40%;
+        }
+    }
+        @media (max-width: 768px) {
+        &.open {
+          width: 100%;
+          border-top-left-radius: 0;
+        }
+    }
 `
 
 
@@ -195,8 +254,8 @@ export const VolverDiv = styled(motion.div)`
       position: absolute;
       top: 0;
       left: 0;
-      width: 6.4rem;
-      height: 6.4rem;
+      width: 5.2rem;
+      height: 5.2rem;
       border-bottom-right-radius: 3.2rem;
       background-color: var(--black);
       transition: all 0.3s ease-in-out;
@@ -213,4 +272,5 @@ export const VolverDiv = styled(motion.div)`
         background-color:rgb(49, 3, 3);
         transition: all 0.3s ease-in-out;
     }
+
 `
