@@ -3,7 +3,7 @@ import { DIV, ImgDiv, Logo, MobileNav, NAV, HamburgerIcon, HamburgerLine, Styled
 import logo from "../../assets/imgs/Logo.webp"
 import { useState } from "react";
 import { useEffect } from "react";
-import { AnimatePresence, stagger } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 
 
