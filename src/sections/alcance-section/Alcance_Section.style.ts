@@ -70,7 +70,8 @@ export const TextDiv = styled.div`
 
     @media (max-width: 768px) {
         width: 100%;
-        h2 {
+        h2,
+        p {
             text-align: left;
         }
     }
