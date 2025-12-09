@@ -9,6 +9,10 @@ export const FormContainer = styled.div`
     width: 45%;
     margin: 0;
 
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
 `
 
 export const FormInfo = styled(motion.p)`

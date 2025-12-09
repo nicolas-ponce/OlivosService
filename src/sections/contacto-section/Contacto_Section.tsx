@@ -19,7 +19,7 @@ export const Contacto_Section = () => {
       <motion.h2
         initial={{opacity: 0, x: -100}}
         whileInView={{opacity: 1, x: 0}}
-        viewport={{ once: true, amount: 1}}
+        viewport={{ once: true, amount: 0.4}}
       >CONTACTO</motion.h2>
       <ContactInfoContainer>
 
@@ -29,7 +29,7 @@ export const Contacto_Section = () => {
           variants={DataVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 1}}
+          viewport={{ once: true, amount: 0.4}}
         >
           <ContactDataItem
             name="TELÉFONO"
