@@ -7,6 +7,16 @@ export const FaqDiv = styled(motion.div)`
     display: flex;
     flex-direction: column;
     width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+
+    @media (max-width: 906px) {
+        position: relative;
+        width: 100%;
+        top: 0;
+    }
 
 `
 
