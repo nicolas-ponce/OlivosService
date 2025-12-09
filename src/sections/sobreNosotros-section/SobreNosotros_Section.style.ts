@@ -17,7 +17,7 @@ export const Container = styled(motion.div)`
     }
 
 
-    @media (max-width: 480px) {
+    @media (max-width: 732px) {
         gap: 6rem;
     }
 `
@@ -32,7 +32,7 @@ export const Box1_Container = styled.div`
         gap: 6rem;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 732px) {
         flex-direction: column;
         gap: 3.2rem;
     }
@@ -41,7 +41,7 @@ export const Box1_Container = styled.div`
 export const Box1_Info = styled(motion.div)`
     width: 50%;
 
-    @media (max-width: 480px) {
+    @media (max-width: 732px) {
         width: 100%;
     }
 `
@@ -57,7 +57,7 @@ export const Box1_ImgDiv = styled(motion.div)`
     }
 
 
-    @media (max-width: 480px) {
+    @media (max-width: 732px) {
         width: 100%;
     }
 `
@@ -85,7 +85,7 @@ export const Box2_Container = styled(motion.div)`
         column-gap: 1.6rem;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 732px) {
         column-gap: 0;
     }
 `
