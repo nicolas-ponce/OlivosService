@@ -23,7 +23,6 @@ export const Container = styled(motion.div)`
         width: 90%;
         height: 60rem;
         justify-content: flex-start;
-        overflow:hidden;
         margin-bottom: 10rem;
     }
 
