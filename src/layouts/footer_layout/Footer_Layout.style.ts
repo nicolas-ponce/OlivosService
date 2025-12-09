@@ -6,12 +6,16 @@ export const Container = styled(motion.div)`
     position: relative;
     display: flex;
     overflow: hidden;
-    height: 25rem;
+    height: 30rem;
     justify-content: center;
     align-items: center;
     margin: auto;
     text-align: center;
     margin-top: 5.6rem;
+
+    @media (max-width: 768px) {
+        height: 35rem;
+    }
 `
 
 export const BlueBlock = styled.div`
@@ -52,6 +56,11 @@ export const TextDiv = styled.div`
         color:rgb(155, 155, 155);
         font-size: 1.2rem;
     }
+
+    @media (max-width: 768px) {
+        margin-top: 9.2rem;
+    }
+
 `
 
 export const IconsDiv = styled.div`
