@@ -13,7 +13,12 @@ export const Hero_Section = () => {
                         initial={{ opacity: 0, x: 500 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.4 }}
-                    >SERVICIO TÉCNICO</motion.h1>
+                    >OLIVOS SERVICE</motion.h1>
+                    <motion.h4
+                        initial={{ opacity: 0, x: 500 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.3, delay: 0.1 }}
+                    >SERVICIO TÉCNICO</motion.h4>
                     <motion.p
                         initial={{ opacity: 0, x: 500 }}
                         animate={{ opacity: 1, x: 0 }}
