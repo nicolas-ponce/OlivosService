@@ -15,6 +15,11 @@ export const Container = styled(motion.div)`
     @media (max-width: 1280px) {
         width: 90%;
     }
+
+
+    @media (max-width: 480px) {
+        gap: 6rem;
+    }
 `
 
 export const Box1_Container = styled.div`
@@ -26,10 +31,19 @@ export const Box1_Container = styled.div`
     @media (max-width: 992px) {
         gap: 6rem;
     }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        gap: 3.2rem;
+    }
 `
 
 export const Box1_Info = styled(motion.div)`
     width: 50%;
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
 `
 
 export const Box1_ImgDiv = styled(motion.div)`
@@ -40,6 +54,11 @@ export const Box1_ImgDiv = styled(motion.div)`
         width: 100%;
         height: 100%;
         border-radius: 1.6rem;
+    }
+
+
+    @media (max-width: 480px) {
+        width: 100%;
     }
 `
 
