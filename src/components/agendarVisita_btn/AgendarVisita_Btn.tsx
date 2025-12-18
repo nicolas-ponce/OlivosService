@@ -8,7 +8,7 @@ export const AgendarVisita_Btn = () => {
         <Link
             aria-label="Chatear en Whatsapp"
             target="_BLANK"
-            href="https://wa.me/5491127719502?text=Hola!%20Tengo%20una%20consulta,%20..."
+            href="https://wa.me/5491127719052?text=Hola!%20Tengo%20una%20consulta,%20..."
             whileHover={{scale: 1.04}}
             whileTap={{scale: 0.96}}
             initial={{ opacity: 0 }}

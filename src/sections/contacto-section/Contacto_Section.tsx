@@ -33,7 +33,7 @@ export const Contacto_Section = () => {
         >
           <ContactDataItem
             name="TELÉFONO"
-            info="+54 9 11 2771-9502"
+            info="+54 9 11 2771-9052"
           />
           <ContactDataItem
             name="EMAIL"
